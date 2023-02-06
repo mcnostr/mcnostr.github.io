@@ -4,7 +4,6 @@
     "PuraVidaBot":"2381e9271dd2809c1d7a16df8bcc3212e46128f34555990553bbd7d295ec8b64"
   },
   "relays": {
-    "a19cf39af5d439844b8d25aa04583860bde0303d50c808609a92d5baf9a2255d": ["wss://brb.io"],
-    "2381e9271dd2809c1d7a16df8bcc3212e46128f34555990553bbd7d295ec8b64": ["wss://brb.io"]
+    "3c1ba7d42c873c2f89caf1ca79b4ead6513385de53743fa6eb98c3705655695c": ["wss://brb.io"],
   }
 }
