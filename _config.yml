@@ -1,2 +1,3 @@
 title: MC Shadowy Super-Coder
 include: [".well-known"]
+exclude: README.md
