@@ -1,4 +1,4 @@
-title: MC Advisory
+title: MC
 include: [".well-known"]
 exclude: 
   - README.md
