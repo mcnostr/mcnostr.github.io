@@ -11,11 +11,11 @@ html {
 }
 
 .top-header .timer-row__progress-bar {
-  background: #4d004d;
+  background: #1b001b;
 }
 
 .top-header .timer-row {
-  background: #1b001b;
+  background: #4d004d;
 }
 
 .payment-tabs__slider {
@@ -25,10 +25,12 @@ html {
 .action-button {
   color: #fff !important;
   background-image: linear-gradient(to right, #4d004d, #1b001b);
+  border-color:#ffffff;
 }
 
 .action-button:active {
   background-image: linear-gradient(to right, #4d004d, #1b001b);
+  border-color:#ffffff;
 }
 
 .invoice {
@@ -76,7 +78,7 @@ html {
 }
 
 a {
-  color: #4d004d !important;
+  color: #ffffff !important;
 }
 
 canvas {
