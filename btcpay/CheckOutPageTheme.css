@@ -11,7 +11,7 @@ html {
 }
 
 .top-header .timer-row__progress-bar {
-  background: #00c3ff;
+  background: #4d004d;
 }
 
 .top-header .timer-row {
@@ -19,16 +19,16 @@ html {
 }
 
 .payment-tabs__slider {
-  background: #00c3ff;
+  background: #4d004d;
 }
 
 .action-button {
   color: #fff !important;
-  background-image: linear-gradient(to right, #00c3ff, #1187c1);
+  background-image: linear-gradient(to right, #4d004d, #1187c1);
 }
 
 .action-button:active {
-  background-image: linear-gradient(to right, #00c3ff, #1187c1);
+  background-image: linear-gradient(to right, #4d004d, #1187c1);
 }
 
 .invoice {
@@ -68,15 +68,15 @@ html {
 }
 
 .payment-tabs__tab .active {
-  color: #00c3ff;
+  color: #4d004d;
 }
 
 .payment-tabs__tab.active {
-  color: #00c3ff;
+  color: #4d004d;
 }
 
 a {
-  color: #00c3ff !important;
+  color: #4d004d !important;
 }
 
 canvas {
