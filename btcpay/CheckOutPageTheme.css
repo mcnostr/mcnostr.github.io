@@ -15,7 +15,7 @@ html {
 }
 
 .top-header .timer-row {
-  background: #1187c1;
+  background: #1b001b;
 }
 
 .payment-tabs__slider {
@@ -24,11 +24,11 @@ html {
 
 .action-button {
   color: #fff !important;
-  background-image: linear-gradient(to right, #4d004d, #1187c1);
+  background-image: linear-gradient(to right, #4d004d, #1b001b);
 }
 
 .action-button:active {
-  background-image: linear-gradient(to right, #4d004d, #1187c1);
+  background-image: linear-gradient(to right, #4d004d, #1b001b);
 }
 
 .invoice {
