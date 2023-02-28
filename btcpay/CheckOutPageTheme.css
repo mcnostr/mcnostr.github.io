@@ -77,6 +77,10 @@ html {
   color: #4d004d;
 }
 
+.recommended-fee {
+  color: #FA7F33;
+}
+
 a {
   color:  #6BF216 !important;
 }
