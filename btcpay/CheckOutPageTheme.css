@@ -25,12 +25,12 @@ html {
 .action-button {
   color: #fff !important;
   background-image: linear-gradient(to right, #4d004d, #1b001b);
-  border-color:565d6e;
+  border-color:#565d6e;
 }
 
 .action-button:active {
   background-image: linear-gradient(to right, #4d004d, #1b001b);
-  border-color:565d6e;
+  border-color:#565d6e;
 }
 
 .invoice {
