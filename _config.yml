@@ -1,4 +1,4 @@
-title: MC
+title: <img src="/images/logos/MC_Logo_Wide.png" alt="mc logo">
 include: [".well-known"]
 exclude: 
   - README.md
