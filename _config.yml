@@ -1,4 +1,4 @@
-title: <img src="/images/logos/MC_Logo_Wide.png" alt="mc logo">
+title: <img src="/images/logos/MC_Logo_Wide.png" alt="mc logo" width="400" height="200">
 include: [".well-known"]
 exclude: 
   - README.md
