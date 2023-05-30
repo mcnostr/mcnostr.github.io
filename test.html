@@ -10,7 +10,7 @@
 	<title>mc@werunnos.com</title>
 	<link rel="stylesheet" href="https://stackedit.io/style.css" />
 	<link rel="stylesheet" href="/otherlinks/navigation.css" />
-	<script src="/otherlinks/navigation.js"></script>
+	<!--<script src="/otherlinks/navigation.js"></script>-->
 </head>
 
 
@@ -25,3 +25,17 @@
 		<div id="main">
 			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 		</div>
+
+	<script>
+		function openNav() {
+		  document.getElementById("mySidenav").style.width = "250px";
+		  document.getElementById("main").style.marginRight = "250px";
+		  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		function closeNav() {
+		  document.getElementById("mySidenav").style.width = "0";
+		  document.getElementById("main").style.marginRight= "0";
+		  document.body.style.backgroundColor = "white";
+		}
+	</script>
