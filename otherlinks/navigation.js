@@ -1,4 +1,3 @@
-<script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginRight = "250px";
@@ -10,4 +9,3 @@ function closeNav() {
   document.getElementById("main").style.marginRight= "0";
   document.body.style.backgroundColor = "white";
 }
-</script>
