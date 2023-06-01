@@ -1,7 +1,7 @@
 <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginRight = "250px";
+function openNav(x, y) {
+  document.getElementById(x).style.width = "250px";
+  document.getElementById(y).style.marginRight = "250px";
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
