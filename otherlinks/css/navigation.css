@@ -46,10 +46,6 @@ body {
   <1--color: #f1f1f1; -->
 }
 
-.content {
-  padding: 16px;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -57,9 +53,6 @@ body {
   width: 60%;
 }
 
-.sticky + .content {
-  padding-top: 10px;
-}
 
 
 
