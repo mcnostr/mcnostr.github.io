@@ -43,8 +43,8 @@ body {
 .header {
   <!--padding: 5px 8px;-->
   padding: 50%;
-  background: #555;
-  color: #f1f1f1;
+  <!--background: #555; -->
+  <1--color: #f1f1f1; -->
 }
 
 .content {
