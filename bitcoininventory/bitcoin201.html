@@ -71,10 +71,52 @@
 		</p>
 		<h4 id="bitcoin201digitalnetwork">Digital Network</h3>
 		<p>
-			
+			The digital network comprises of many computers running the Bitcoin open source code, sending messages back and forth to one another. 
+			These computers form a peer-to-peer network, with each computer functioning as an independent actor or participant. 
+			Any participant has the freedom to join or exit the network as they choose.
 		</p>
 		</p>
-			
+			Every participant has their own version of the ledger, which contains the complete record of bitcoin transactions, including address balances and movements since its inception. 
+			With a personal copy of the ledger, each participant has the capability to conduct real-time audits of the entire network and enforce the rules governing ledger updates. 
+			This decentralized approach enables participants to maintain transparency and enforce the ledger's integrity without relying on a centralized authority.
+		</p>
+		</p>
+			Every 10 minutes, on average, a “new page” is added to the ledger. Each “new page” is called a block. 
+			And as a participant you can independently audit the “new page” to ensure it has been updated appropriately and if not, you would ignore the “new page”. 
+		</p>
+		</p>
+			The ledger's data structure may not be efficient, but it simplifies the auditing process for participants to review the entire ledger from its inception. 
+			Each "new page" or block consists of new transactions that are consolidated into a Merkle tree. 
+			A block, conatainning a Merkle tree, is connected to the previous block by hashing the current block with the preceding one. 
+			This linkage between blocks ensures that any modification to a prior block would create a ripple effect, affecting all subsequent blocks. 
+			Therefore, if Bob attempts to manipulate a previous block to grant himself additional bitcoins, other participants would quickly detect this discrepancy. 
+			Similarly, if Bob intends to grant himself more bitcoins in a new block, other participants would promptly identify this inconsistency through their independent examination of the new block. 
+			This system establishes a tamper-evident history for the monetary system, ensuring transparency and preventing unauthorized alterations.
+		</p>
+		</p>
+			Why wouldn’t Bob span the network, flooding trillions of new blocks to the peer-to-peer network with bitcoin going to his own address?
+		</p>
+		</p>
+			In order to build a block, a cost is incurred. 
+			Mathematically proven, there is no way to build a block without incurring a cost. 
+			Participants that incur a cost and build blocks are called miners and they are compensated in new bitcoins.
+			For every new block:
+			<br>
+			<ul>
+				<li>New bitcoin are created</li>
+				<li>New transactions are recorded</li>
+				<li>Address balances are updated</li>
+			</ul>
+			Beginning on January 3, 2009, each new block created 50 new bitcoins. 
+			Every 210,000 blocks, the number of new bitcoins created is cut in half and the monetary issuance function, converges on 21 million coins.
+			At the time of writing, there have been three halvenings thus far and approximately 19 million of the 21 million coins are in circulation. 
+			Currently, 6.25 bitcoin are created every block, which is called the block reward and is the compensation to the miner who incurs a cost.
+		</p>
+		</p>
+			Miners engage in a competitive race to "find" the next block, aiming to secure the block reward as well as transaction fees. 
+			To ensure a tangible cost is involved, the mining process is linked to energy consumption. 
+			This reliance on energy, governed by the objective laws of physics, becomes an essential requirement for successfully mining a block. 
+			The mining process is computationally intensive, requiring a significant amount of electricity, and is referred to as "<a href="https://nakamotoinstitute.org/mempool/the-proof-of-work-concept/">Proof of Work</a>".
 		</p>
 		<h4 id="bitcoin201digitalasset">Digital Asset</h3>
 		<p>
