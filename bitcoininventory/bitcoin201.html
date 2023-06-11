@@ -118,6 +118,43 @@
 			This reliance on energy, governed by the objective laws of physics, becomes an essential requirement for successfully mining a block. 
 			The mining process is computationally intensive, requiring a significant amount of electricity, and is referred to as "<a href="https://nakamotoinstitute.org/mempool/the-proof-of-work-concept/">Proof of Work</a>".
 		</p>
+		<p>
+			Miners search for a special number as an output to the SHA256 hash function. 
+			This iterative process continues until either the desired output is found or another miner discovers it first. 
+			It does not involve traditional calculations; rather, it can be likened to repeatedly rolling exceptionally heavy dice until the desired number is rolled. 
+			It is probabilistic and requires electricity. 
+			The miner relies on electricity to run, as they perform numerous hash operations per second. 
+			The miner combines the current block data, the prior block header hash, and a nounce in the hash function. 
+			The miner iterates through many random nounces, until the hash output is the desired outout. 
+			If fortunate, the miner ultimately succeeds in finding the desired output. 
+			When a miner “finds” the desired output, they broadcast the new block to the network and every participant checks to ensure the new block is valid.
+		</p>
+		<p>
+			AS an example, we have heavy dice that require lots of strength to roll and there is a prize is double 7s are rolled.
+			Over time, as I roll the heavy dice every day in pursuit of double 7s, I should gradually build strength, allowing me to increase the number of rolls I can make within a day. 
+			Moreover, if there is value attached to the reward for rolling double 7s, it is highly probable that others will also begin rolling the heavy dice. 
+			As the number of rolls increases, so does the likelihood of achieving double 7s. 
+			Similarly, as more miners join the network or enhance the efficiency of their computers in converting electricity to hashes, the chances of attaining the desired output become more favorable. 
+			However, it is crucial that a new block is mined, on average, every ten minutes. 
+			Since the issuance of new bitcoin is tied to the creation of new blocks, maintaining this ten-minute interval is vital for upholding the fixed monetary issuance policy of bitcoin.
+		</p>
+		<p>
+			The Bitcoin protocol incorporates a difficulty adjustment mechanism, which takes place every 2016 blocks (interestingly, this number is the inverse of 6102 - <a href="https://en.wikipedia.org/wiki/Executive_Order_6102">Executive Order 6102</a>). 
+			This adjustment dynamically modifies the target hash output to either increase or decrease the likelihood of finding it. 
+			Think of it as gears that adjust to maintain the pace of generating new blocks, aiming for an average interval of 10 minutes. 
+			For instance, a hash function output containing ten leading zeros is less probable to be found compared to an output with only five leading zeros. 
+			The difficulty adjustment mechanism allows for the fine-tuning of the target output, ensuring a balanced and consistent mining process while accounting for variations in computational power across the network.
+			This is how the difficulty adjustment keeps the timechain (blockchain) ticking every 10 minutes, on average.
+		</p>
+		<p>
+			
+		</p>
+		<p>
+			
+		</p>
+		<p>
+			
+		</p>
 		<h4 id="bitcoin201digitalasset">Digital Asset</h3>
 		<p>
 			....
