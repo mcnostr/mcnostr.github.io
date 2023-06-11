@@ -168,7 +168,64 @@
 		</p>
 		<h4 id="bitcoin201digitalasset">Digital Asset</h3>
 		<p>
-			....
+			Bitcoin the asset does not exist in physical form, such as coins in your pocket or gold bars in a vault. 
+			Instead, it is digital data, represented by bits (ones and zeros) stored on computers. 
+			To simplify, envision a spreadsheet where each row represents an address and its corresponding balance. 
+			Each address is assigned a specific balance within this ledger. 
+			Remember that each participant or node possesses their own individual copy of this spreadsheet or ledger.
+		</p>
+		<p>
+			You don't actual own coins. 
+			Rather, ownership is tied to knowledge of a private key — an exceptionally large number generated randomly. 
+			By utilizing a private key associated with a particular address, one can generate a digital signature that facilitates the transfer of "coins" (which exist purely as digital data) from one address to another. 
+			The intriguing aspect here is that you do not possess anything physical; instead, you possess knowledge of a secret number. 
+			This raises an interesting question: can you truly own a number, or can you only know a number? 
+			Bitcoin blurs the distinction between ownership and knowledge.
+		</p>
+		<p>
+			As an example, let's imagine a spreadsheet with rows representing addresses and their corresponding balances. 
+			In this scenario, you possess a private key associated with the address labeled "ABC," which holds a balance of 0.1 bitcoin. 
+			By utilizing this private key (a secret and large number known only to you) you can generate a digital signature for the address ABC. 
+			The network verifies the validity of a transaction by checking for a valid digital signature, among other criteria, and records it in the ledger. 
+			Suppose we wish to transfer the entire balance from address ABC to address XYZ. 
+			In that case, we would create a packet of data comprising the following information: 
+			<br>
+			<ul>
+				<li>an input amount (0.1 bitcoin)</li>
+				<li>an output amount (0.09 bitcoin)</li>
+				<li>the recipient address (address XYZ)</li>
+				<li>the miner fee (0.01 bitcoin)</li>
+				<li>a valid digital signature</li>
+			<br>
+			The process can be likened to writing a check, where crucial information such as the amount, recipient, sender, and a valid signature are included. 
+			Next, we would "mail" this check by broadcasting the packet of data to the peer-to-peer network. 
+			In a similar manner, just as a bank teller confirms the availability of funds and the authenticity of the signature, each node or participant in the network verifies the validity of the packet of data and its digital signature. 
+			Once the transaction is deemed valid, miners retrieve the transaction from the mempool and incorporate it into a "new page of the ledger" or a new block. 
+			At this stage, the miner claims the transaction fee and the block reward for themselves. 
+			The miner broadcasts the newly created block to the peer-to-peer network, leading to the updating of the ledger for all participating nodes. 
+			The valid transaction becomes part of the ledger and is now recorded in the 'blockchain'.
+		</p>
+		<p>
+			Simply put, by using a very large number (the private key) and the peer-to-peer network, you have updated the ledger. 
+			The balance of ABC is now 0 bitcoin. 
+			The balance of XYZ is 0.09 bitcoin. 
+			The miner has earned 0.01 bitcoin in transaction fees and the block reward. 
+			The ledger is like a public chalk board and you have permission to make edits to the chalk board if you can prove you are the private key holder.
+		</p>
+		<p>
+			
+		</p>
+		<p>
+			
+		</p>
+		<p>
+			
+		</p>
+		<p>
+			
+		</p>
+		<p>
+			
 		</p>
 		<h4 id="bitcoin201technicalsummary">Technical Summary</h3>
 		<p>
