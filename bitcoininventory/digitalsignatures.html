@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Collection of notes on bitcoin / nostr / other stuff">
+	<meta name="keywords" content="Free tutorials, bitcoin, nostr, notes, stuff, mc">
+	<meta name="author" content="mc">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mc@werunnos.com</title>
+	<link rel="stylesheet" href="https://stackedit.io/style.css" />
+	<link rel="stylesheet" href="/otherlinks/css/navigation.css" />
+</head>
+
+<body class="stackedit">
+	<div class="stackedit__html">
+		<div class="header" id="myHeader">
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="https://werunnos.com/index.html#mc">Home</a>
+				<a href="https://werunnos.com/bitcoin.html#mc">Bitcoin</a>
+				<a href="https://werunnos.com/nostr.html#mc">Nostr</a>
+				<a href="https://werunnos.com/allelse.html#mc">All Else</a>
+				<a href="https://werunnos.com/index.html#contact">Contact</a>
+			</div>
+			<h5 id="main">
+  				<a href="https://werunnos.com"><img src="/images/logos/MC_Logo_Wide.png" alt="mc logo" width="100" height="43"></a>
+				<span style="font-size:30px;cursor:pointer;float:right" onclick="openNav()">&#9776;</span>
+			</h5>
+		</div>
+		<h3 id="digitalsignaturesstart">Digital Signatures</h3>
+		<p>
+      Digital signatures are used in Bitcoin, Nostr, and many other applications. 
+      Remember, Bitcoin is a like a public wall containing a list of who owns what. 
+      In order to change the public wall, you have to produce an appropriate digital signature. 
+      Traditionally, Bitcoin uses the Elliptic Curve Digital Signature Algorithm (“ECDSA”) over the secp256k1 curve with SHA256 hashes for authenticating transactions. 
+      Later in this article we see there is a BIP to introduce the Schnorr Signature scheme. 
+      But first, lets get a high level understanding of digital signatures.
+    </p>
+    <p>
+      With physical signatures, you apend a sequence of characteristics (typically your full name) in your own unique font to a physical document. 
+      A digital signature does this similarly but using mathematics. 
+      Common digital signature schemes are:
+      <ul>
+        <li>RSA – Rivest-Shamis-Adleman scheme</li>
+        <li>DSS – Digital Signature Standard</li>
+        <li>ECDSA -  Elliptic Curve Digital Signature Algorithm</li>
+        <li>Schnorr Signatures</li>
+      </ul>
+    </p>
+    <p>
+      It is actually harder to forge a digital signature than a physical signature. 
+      To sign something digitally, you have to first produce two keys:
+      <ol>
+        <li>Private Key – Signing Key (Sk)</li>
+        <li>Public Key – Verifying Key (Vk)</li>
+      </ol>
+      Your private key is kept secret and your public key is known to others. 
+      It is infeasible to generate the private key by knowing the public key. 
+      You can generate the public key by knowing the private key. 
+      This is known as a one way function.
+    </p>
+    <p>
+      If you have an electronic document or message (M) that you would like to sign, you need both M and your private key (Sk). 
+      With M and Sk, you create a signature (Sm) that is unique. 
+      A mathematical transformation is performed by taking M and Sk as inputs, which produces a unique output (the signature). 
+      This signature is a sequence of numbers. 
+      Lets refer to the signature as Sm.
+    </p>
+    <p>
+      In order to verify the signature, a person would take M, Sm, and the signer’s public key (Vk). 
+      Again, using a mathematical transformation, you can verify that the message (M), and signature (Sm), correspond to the private key (Sk) that is associated with the public key (Vk). 
+      You do not need to know the signer’s private key to perform this verification, you only need their public key. 
+    </p>
+    <p>
+      With digital signatures, you can bind an identity to a digital message (assuming ONLY that identity has the private key). 
+      Keep in mind, the message is an input to the mathematical transformation that produces the signature. 
+      The signature changes based on the message, whereas a physical signature is the same regardless of the document being signed.
+    </p>
+    <p>
+      More accurately, the message being signed is typically the cryptographic hash of the full message. 
+      We can refer to the full message as FM and the cryptographic hash of the full message as M. 
+      In most signature algorithms you are signing M, not FM. 
+      The hash of any FM will produce an output of the same length every time. 
+      By using M as the input to signature algorithm, we keep a consistent input length to the signature algorithm. 
+      In this application, it is important that the cryptographic hash function is collision resistant. 
+      Collision resistant means that two different inputs (FM) could not produce the same output hash. 
+    </p>
+    <p>
+      These are some applications of digital signatures:  
+      <ul>
+        <li>PGP uses RSA but also supports DSA and ECDSA.</li>
+        <ul>
+          <li>The <a href=”https://www.orchid.systems/articles/2022/pgp-its-pretty-good-story”>story</a> of Zimmerman and PGP is legendary.</li>
+        </ul>
+        <li>Bitcoin uses ECDSA although <a href=”https://bips.xyz/340”>BIP 340</a> introduces Schnorr Signatures.</li>
+        <ul>
+          <li>Among other benefits, Schnorr Signatrues reduce the complexity of Bitcoin transactions, leading to lower transaction fees.</li>
+        </ul>
+        <li>Nostr uses Schnorr Signatures for secp256k1.</li>
+        <li>ECDSA is popular and also used in SSL/TLS certificates, secure email, etc.</li>
+      </ul>
+      </p>
+    <p>
+      If you are interested, try playing around with digital signatures. 
+      Use PGP in a command terminal and sign a document, or set up an account on nostr and send an event, or try sending a bitcoin transaction - All of these would invovle a digital signature. 
+      With the growth in artificial intelligence, digital signatures will likely become the method of proving ones online identity and activity. 
+      I suspect digital signatures will be <i>key</i> in our digital future.
+    </p>
+    <p>
+			Go <a href="https://werunnos.com/bitcoin.html">back</a> to check out some of my other bitcoin related articles.
+		</p>
+		<p>
+			<br>
+			<font size="2.1"><i>AI was leveraged to help write this article.</i></font>
+		</p>
+		<hr>
+		<h3 id="donations">Sats</h3>
+		    <p>If you felt you received some value, you can make a <a href="https://werunnos.com/index.html#donations">donation ⚡</a></p> 
+		<hr>
+		<h3 id="contact">Contact</h3>
+		  <p>Email: mc@werunnos.com</p>
+		  <p><a href="https://snort.social/p/npub15xw08xh46sucgjudyk4qgkpcvz77qvpa2ryqscy6jt2m47dzy4wsxutq47">Nostr</a>: mc@werunnos.com</p>
+		<script src="/otherlinks/js/navigation.js"></script>
+		<script src="/otherlinks/js/scroll.js"></script>
+	</div>
+</body>
